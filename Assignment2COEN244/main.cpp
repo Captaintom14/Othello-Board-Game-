@@ -67,8 +67,11 @@ int main() {
     }
 
     if (choiceUser == 2){
-        Game g(p1,p2);
+        /*
+         Game g(p1,p2);
         g.load();
+        */
+       cout << "this feature is not yet available." <<endl;
 
     }
 

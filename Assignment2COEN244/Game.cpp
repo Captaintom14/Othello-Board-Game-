@@ -94,24 +94,16 @@ void Game :: save(){
             }
         */
 
-
-
-
-
-
-
         } catch(int notGoodNumber) {
             cout << "Please try again. Type between 1 and 2." << endl;
             cout << "***********************" << endl;
 
         }
     }
-
-
-
-
 }
 
+
+/*
 void Game :: load() {
 
 
@@ -126,7 +118,7 @@ void Game :: load() {
 
       getline(filename,namePlayer1); // checks the first line
       getline(filename,namePlayer2); //checks the second line
-      getline(filename,currentPlayer); // checks the third line
+      getline(filename,nameCurrentPlayer); // checks the third line
 
      
       for (int i = 0; i < 8; ++i) {
@@ -138,8 +130,8 @@ void Game :: load() {
 
     player1.setNamePlayer(namePlayer1);
     player2.setNamePlayer(namePlayer2);
-
-  /*
+    currentPlayer->setNamePlayer(nameCurrentPlayer);
+  
   for (int i = 0; i < 8; ++i) {
           for (int j = 0; j < 8; ++j) {
               cout << board.othelloBoard[i][j];
@@ -147,7 +139,7 @@ void Game :: load() {
           cout <<endl;
       }
 
-  */
+
 
 cout <<"The game has been loaded."<<endl;
 cout <<"The game may resume." << endl;
@@ -159,6 +151,8 @@ play();
       exit (0);
   }
 
+  
+*/
 
 
 
@@ -166,6 +160,6 @@ play();
 
 
 
-}
+
 
 

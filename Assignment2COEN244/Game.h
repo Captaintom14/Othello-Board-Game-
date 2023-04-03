@@ -18,6 +18,7 @@ private :
     // necessary attributes
     string namePlayer1;
     string namePlayer2;
+    string nameCurrentPlayer;
     Player player1;
     Player player2;
     Player* currentPlayer;
@@ -29,7 +30,7 @@ public :
     Board board;
     int playerCol = 0 ;
     int playerRow = 0;
-    void load();
+   // void load();
     
 Game(Player p1, Player p2) {
 
