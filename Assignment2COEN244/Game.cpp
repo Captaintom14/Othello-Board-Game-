@@ -85,9 +85,6 @@ void Game :: save(){
                 play();
             }
 
-
-
-
             /*
             for (int i = 0; i < 8; ++i) {
                 for (int j = 0; j < 8; ++j) {
@@ -96,6 +93,9 @@ void Game :: save(){
                 cout << " " << endl;
             }
         */
+
+
+
 
 
 
@@ -112,7 +112,7 @@ void Game :: save(){
 
 }
 
-void Game ::load() {
+void Game :: load() {
 
 
   string filename;
@@ -124,11 +124,11 @@ void Game ::load() {
   if (gameFile){
       cout << "This game file exits" << endl;
 
-     // getline(filename,namePlayer1); checks the first line
-     // getline(filename,namePlayer2); checks the second line
-     // getline(filename,currentPlayer); checks the third line
+      getline(filename,namePlayer1); // checks the first line
+      getline(filename,namePlayer2); //checks the second line
+      getline(filename,currentPlayer); // checks the third line
 
-     /*
+     
       for (int i = 0; i < 8; ++i) {
           for (int j = 0; j < 8; ++j) {
 
@@ -136,15 +136,23 @@ void Game ::load() {
           }
       }
 
+    player1.setNamePlayer(namePlayer1);
+    player2.setNamePlayer(namePlayer2);
+
+  /*
   for (int i = 0; i < 8; ++i) {
           for (int j = 0; j < 8; ++j) {
               cout << board.othelloBoard[i][j];
           }
           cout <<endl;
       }
-      */
 
+  */
 
+cout <<"The game has been loaded."<<endl;
+cout <<"The game may resume." << endl;
+
+play();
 
   } else{
       cout <<"This game file does not exist. The game may close." << endl;

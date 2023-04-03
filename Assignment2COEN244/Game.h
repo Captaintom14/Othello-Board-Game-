@@ -22,7 +22,7 @@ private :
     Player player2;
     Player* currentPlayer;
     bool playablePosition;
-    void save ();
+    void save();
 
 
 public :
@@ -30,9 +30,7 @@ public :
     int playerCol = 0 ;
     int playerRow = 0;
     void load();
-
-
-
+    
 Game(Player p1, Player p2) {
 
         player1 = p1;
@@ -321,6 +319,7 @@ Game(Player p1, Player p2) {
                  currentPlayer = &player1;
              }
              save();
+
          }
 
          if (optionPlayer == 3) {
